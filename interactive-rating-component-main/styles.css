@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey-color: hsl(217, 12%, 63%);
+    --medium-grey-color: hsl(216, 12%, 54%);
+    --dark-blue-color: hsl(213, 19%, 18%);
+    --very-dark-blue-color: hsl(216, 12%, 8%);
+    --icon-background-color: hsl(216, 12%, 8%, 0.4);
+    --orange-color: hsl(25, 97%, 53%);
+}
+
+body {
+    background-color: var(--very-dark-blue-color);
+    font-family: Overpass, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--dark-blue-color);
+    border-radius: 20px;
+    height: 400px;
+    width: 450px;
+    margin: 0;
+    padding: 30px;
+    position: absolute;
+}
+
+.icon {
+    background-color: var(--icon-background-color);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--white-color);
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 15px;
+    color: var(--light-grey-color);
+    margin: 35px 0;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratings > div {
+    background-color: var(--icon-background-color);
+    color: var(--light-grey-color);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ratings > div:hover {
+    background-color: var(--orange-color);
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
+    color: black;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: var(--orange-color);
+    border-radius: 20px;
+    height: 40px;
+    transition: transform 0.2s linear;
+}
+
+.submit:hover {
+    transform: scale(1.01);
+}
+.submit a {
+    font-family: inherit;
+    text-decoration: none;
+    color: var(--white-color);
+}

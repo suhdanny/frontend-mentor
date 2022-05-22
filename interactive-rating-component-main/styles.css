@@ -81,6 +81,11 @@ p {
     color: black;
 }
 
+.ratings .rate.active {
+    background-color: var(--orange-color);
+    color: black;
+}
+
 .submit {
     display: flex;
     justify-content: center;
@@ -90,6 +95,7 @@ p {
     border-radius: 20px;
     height: 40px;
     transition: transform 0.2s linear;
+    cursor: pointer;
 }
 
 .submit:hover {

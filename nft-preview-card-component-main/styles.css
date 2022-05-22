@@ -29,9 +29,8 @@ body {
     background-color: var(--very-dark-blue-card);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 20px;
-    height: 70vh;
+    height: 500px;
     width: 300px;
     padding: 20px;
     position: relative;

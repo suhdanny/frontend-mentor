@@ -1,6 +1,6 @@
 # Frontend Mentor
 
-This repository contains my own solutions to various challenges listed at Frontend Mentor.
+This repository contains my own solutions to various challenges listed on [Frontend Mentor](https://www.frontendmentor.io/home).
 
 ## Relevant Links (Demo)
 

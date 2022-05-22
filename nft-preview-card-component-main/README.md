@@ -29,9 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![solution screenshot](./screenshot.png)
 
 ### Links
 

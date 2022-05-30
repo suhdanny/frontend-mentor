@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --cyan-light: hsl(179, 62%, 46%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --body-font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Karla, sans-serif;
+    background-color: var(--light-gray);
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    width: 50vw;
+    height: 60%;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 10px 10px lightgrey; /* x-offset | y-offset | blur-radius | color */
+}
+
+.item-a {
+    background-color: white;
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.item-a .title {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--cyan);
+}
+
+.item-a .sub-title {
+    font-weight: 700;
+    font-size: var(--body-font-size);
+    color: var(--bright-yellow);
+    margin-top: 10px;
+}
+
+.item-a .description {
+    color: var(--grayish-blue);
+    font-size: var(--body-font-size);
+}
+
+.item-b {
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.item-b .title {
+    color: white;
+    font-size: 18px;
+}
+
+.item-b .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price div:nth-child(1) {
+    font-size: 25px;
+    color: white;
+}
+
+.price div:nth-child(2) {
+    font-size: var(--body-font-size);
+    color: white;
+    opacity: 0.3;
+}
+
+.item-b .description {
+    color: white;
+    opacity: 0.6;
+}
+
+.item-b .btn {
+    padding: 10px;
+    background-color: var(--bright-yellow);
+    color: white;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-c {
+    background-color: var(--cyan-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.item-c .title {
+    font-size: 18px;
+    color: white;
+}
+
+.item-c .description {
+    font-size: 13px;
+    color: white;
+    opacity: 0.6;
+}
+
+.attribution {
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    color: var(--white);
+    font-size: 12px;
+}
+
+.attribution > span {
+    color: var(--cyan);
+}
